@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+
+	{% for mb in Credit %}
+    <div class="container">
+    	<h3>{{mb.credit_name}}</h3>
+    	<p>{{mb.credit_price}}<</p>
+    	{% if mb.credit_detail %}
+    		<p>{{mb.credit_detail}}</p>
+    	{% endif %}
+    </div>
+    {% endfor %}
+</div>
+    
+{% endblock content %}
